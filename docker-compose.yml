@@ -13,6 +13,7 @@ services:
       - mongo
     environment:
       MONGO_URI: "mongodb://mongo:27017/mydatabase"
+    
     command: sh -c "npm install && npm start"
 
   mongo:
