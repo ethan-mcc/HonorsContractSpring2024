@@ -6,6 +6,7 @@
   "main": "index.mjs",
   "scripts": {
     "start": "node index.mjs",
+    "initdb": "node dataset.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "doc": "jsdoc -c jsdoc.json"
   },
@@ -15,6 +16,7 @@
     "body-parser": "^1.20.2",
     "express": "^4.18.3",
     "mongoose": "^8.2.0",
+    "p-limit": "^5.0.0",
     "path": "^0.12.7",
     "url": "^0.11.3"
   },

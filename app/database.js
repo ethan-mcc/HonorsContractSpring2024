@@ -10,10 +10,11 @@ class Database {
 
     /**
      * Connect to MongoDB.
+     * @returns {Promise} A promise representing the connection process.
      */
     connect() {
         const mongoURI = process.env.MONGO_URI || 'mongodb://localhost:27017/mydatabase';
-        mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+        return mongoose.connect(mongoURI);
     }
 }
 
